@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap");
+.navBar {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+  font-family: Montserrat;
+}
+
+@media (max-width: 650px) {
+  .menu {
+    display: none;
+  }
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.mobileMenuLine {
+  border-bottom: 1px solid white;
+  margin-bottom: 5px;
+}
+
+@media (max-width: 649px) {
+  .mobileMenu {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 10px;
+    z-index: 999;
+  }
+}
+
+.name {
+  display: flex;
+  font-family: Montserrat;
+  margin-left: 50px;
+}
+
+.mobileMenuList {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  z-index: 0;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5em;
+  list-style-type: none;
+}
+
+.mobileList {
+  width: fit-content;
+  margin-bottom: 30px;
+  animation: appear 2s ease
+}
+
+@keyframes appear {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+
+.firstMenuLineClosed {
+  width: 30px;
+  height: 1px;
+  background-color: white;
+  margin: 6px 0px 0px 0px;
+  transform: rotate(0deg);
+  transition: 0.5s ease;
+  position: relative;
+  top: 0px;
+}
+
+.firstMenuLineOpen {
+  background-color: white;
+  width: 30px;
+  height: 1px;
+  margin: 3px 0;
+  transform: rotate(45deg);
+  transition: 0.5s ease;
+  position: relative;
+  top: 5px;
+}
+
+.secondMenuLineClosed {
+  width: 30px;
+  height: 1px;
+  background-color: white;
+  margin: 6px 0px 0px 0px;
+  transform: rotate(0deg);
+  transition: 0.5s ease;
+  position: relative;
+  bottom: 0px;
+}
+
+.secondMenuLineOpen {
+  background-color: white;
+  width: 30px;
+  height: 1px;
+  margin: 6px 0;
+  transform: rotate(-45deg);
+  transition: 0.5s ease;
+  position: relative;
+  bottom: 4px;
+}
+
+.thirdMenuLineClosed {
+  width: 30px;
+  height: 1px;
+  background-color: white;
+  margin: 6px 0px 0px 0px;
+  transition: 0.5s ease;
+}
+
+.thirdMenuLineOpen {
+  width: 0px;
+  height: 0px;
+  background-color: black;
+  margin: 3px 0;
+  transition: 0.5s ease;
+}
+
+.list:hover {
+  border-bottom: 1px solid white;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: #29ef53;
+  transition: 0.7s;
+}

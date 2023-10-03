@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap");
+
+body {
+  font-family: Montserrat;
+}
+
+.skillsPage {
+  background-color: #f8f8f2;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+@media(max-width: 900px){
+  .skillsPage{
+    height: 100%
+  }
+}
+
+.skillDescription {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.skillText {
+  width: 60%;
+  text-align: justify;
+}
+
+.skillsContainer {
+  width: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.skillsContainer p{
+    margin: 0;
+    font-weight: 600
+}
+
+.skillsContainer ul{
+margin: 30px;
+}
+
+.skillsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skillIcon{
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #24bde7;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 23px;
+    
+}

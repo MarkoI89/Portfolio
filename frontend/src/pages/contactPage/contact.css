@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,900&display=swap');
+
+
+.contactPage{
+    width: 100%;
+    height: 100vh;
+    background: #212020;
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top:  50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: Montserrat
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+hr{
+    margin: 0;
+    width: 200px;
+    border: 0;
+    border-bottom: 1px dashed #ccc;
+    background: #999;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm input{
+    border: 1px solid white;
+    background-color: transparent;
+    height: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+textarea{
+    background-color: transparent;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.submitForm{
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+}
