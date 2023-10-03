@@ -138,14 +138,12 @@ function HomePage() {
           </button>
         </div>
       </div>
-      <div className="basicInfoAndText">
-        <div className="basicInfo">
-          <p>Email: markoivezic89@gmail.com</p>
-          <p>Phone: +33767861787</p>
-        </div>
-        <div className="movingText">
-          <LetterByLetterText text={texts[currentIndex]} />
-        </div>
+      <div className="basicInfo">
+        <p>Email: markoivezic89@gmail.com</p>
+        <p>Phone: +33767861787</p>
+      </div>
+      <div className="movingText">
+        <LetterByLetterText text={texts[currentIndex]} />
       </div>
     </div>
   );
