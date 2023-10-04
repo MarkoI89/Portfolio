@@ -5,7 +5,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { SvgIcon } from "@mui/material";
 import { useState, useEffect } from "react";
-import cv from "../../assets/Marko Ivezic CV.pdf-4.pdf";
+import cv from "../../assets/Marko Ivezic CV.pdf-5.pdf";
 
 import "./homePage.css";
 function LetterByLetterText({ text }) {
