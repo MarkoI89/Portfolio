@@ -1,6 +1,6 @@
 import NavBar from "../../components/navBar/NavBar";
 import "./contact.css";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -8,7 +8,6 @@ function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [messageWarning, setMessageWarning] = useState(null);
   const [messageSent, setMessageSent] = useState(null);
   const [nameError, setNameError] = useState(true);
   const [emailError, setEmailError] = useState(true);
@@ -50,7 +49,6 @@ function Contact() {
       setShowErrorMessage(true);
       return;
     } else {
-      // setMessageWarning(null);
       emailjs
         .sendForm(
           import.meta.env.VITE_SERVICE_ID,
@@ -79,9 +77,6 @@ function Contact() {
           <hr />
           <h4>Fill the form below if you have any question or offer.</h4>
         </div>
-        {/* {messageWarning && (
-            <p style={{ color: "red" }}>All the fields are required</p>
-          )} */}
         {messageSent && (
           <p style={{ color: "#42db55" }}>Message has been sent</p>
         )}
@@ -94,7 +89,7 @@ function Contact() {
             type="text"
             onChange={handleNameField}
             name="name"
-            className={nameError && showErrorMessage ? "inputError" : "input" }
+            className={nameError && showErrorMessage ? "inputError" : "input"}
           />
           {emailError && showErrorMessage && (
             <p style={{ color: "red" }}>This field is required</p>
@@ -104,7 +99,7 @@ function Contact() {
             type="text"
             onChange={handleEmailField}
             name="email"
-            className={emailError && showErrorMessage ? "inputError" : "input" }
+            className={emailError && showErrorMessage ? "inputError" : "input"}
           />
           {messageError && showErrorMessage && (
             <p style={{ color: "red" }}>This field is required</p>
@@ -115,7 +110,9 @@ function Contact() {
             rows="10"
             onChange={handleMessageField}
             name="message"
-            className={messageError && showErrorMessage ? "textInputError" : "textInput" }
+            className={
+              messageError && showErrorMessage ? "textInputError" : "textInput"
+            }
           />
           <button className="submitForm">Send</button>
         </form>
