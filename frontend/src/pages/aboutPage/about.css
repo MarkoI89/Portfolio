@@ -31,6 +31,12 @@
   text-align: justify;
 }
 
+@media(max-width: 600px){
+  .aboutText{
+    width: 90%
+  }
+}
+
 .textContainer{
   display: flex;
   flex-direction: column;
