@@ -140,7 +140,7 @@ function HomePage() {
       </div>
       <div className="basicInfo">
         <p>Email: markoivezic89@gmail.com</p>
-        <p>Phone: +33767861787</p>
+        <p className="phone" >Phone: +33767861787</p>
       </div>
       <div className="movingText">
         <LetterByLetterText text={texts[currentIndex]} />

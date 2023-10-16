@@ -136,3 +136,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.phone{
+  margin-bottom: 0;
+}

@@ -27,6 +27,12 @@
   height: 200px;
 }
 
+@media(max-width: 600px){
+  .projectContainer img {
+    width: 350px;
+  }
+}
+
 .allProjects {
   display: flex;
   justify-content: space-evenly;
@@ -57,6 +63,12 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
+}
+
+@media(max-width:600px){
+  .projectsHeadline {
+    padding: 0;
+  }
 }
 
 .projectsHeadline h3 {
