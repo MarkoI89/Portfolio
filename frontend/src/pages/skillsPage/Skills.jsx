@@ -11,6 +11,7 @@ function Skills() {
     <div className="skillsPage">
       <div className="skillDescription">
         <h2>Skills Overview</h2>
+        <hr />
         <p className="skillText">
           Proficient in the MERN stack, showcasing expertise in MongoDB for
           efficient and scalable data management. With Express.js, I navigate

@@ -2,6 +2,7 @@ import "./projects.css";
 import project1Photo from "../../assets/Screenshot 2023-09-28 143456.jpg";
 import project2Photo from "../../assets/autodraw 02_10_2023(1).png";
 import project3Photo from "../../assets/Screenshot 2023-10-02 133013.png";
+import letsshoot from "../../assets/Screenshot 2023-11-19 at 09-54-29.png";
 
 function Projects() {
   const viewMIPhotography = () => {
@@ -14,6 +15,10 @@ function Projects() {
 
   const viewCalculator = () => {
     window.location.href = "https://markoi89.github.io/Calculator-React/";
+  };
+
+  const viewLetsshoot = () => {
+    window.location.href = "https://letshoot.netlify.app/";
   };
 
   return (
@@ -49,6 +54,34 @@ function Projects() {
             constantly updated
           </p>
           <button onClick={viewMIPhotography} className="viewProjectButton">
+            View Project
+          </button>
+        </div>
+        <div className="projectContainer">
+          <img src={letsshoot} alt="" />
+          <h4>Lets shoot</h4>
+          <p style={{ textAlign: "justify" }}>
+            Lets shoot is a social network for artists, users can post
+            photos, tag other artist, like/dislike photos, add/remove friends
+            and follow their work on feed page
+          </p>
+          <div></div>
+          <p>
+            <span style={{ fontWeight: "600" }}>Backend:</span> Node.js,
+            JavaScript.
+          </p>
+          <p>
+            <span style={{ fontWeight: "600" }}>Data base:</span> MongoDB.
+          </p>
+          <p>
+            <span style={{ fontWeight: "600" }}>Frontend:</span> React.js,
+            JavaScript, Css, Material UI
+          </p>
+          <p>
+            <span style={{ fontWeight: "600" }}>Status:</span> Deployed, planed
+            update.
+          </p>
+          <button onClick={viewLetsshoot} className="viewProjectButton">
             View Project
           </button>
         </div>
